@@ -1,0 +1,183 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>SearchLogic</name>
+    </assembly>
+    <members>
+        <member name="T:SearchTest.Helper">
+            <summary>
+            Helper methods for SearchLogic.
+            </summary>
+        </member>
+        <member name="M:SearchTest.Helper.SerializeToString(System.Object)">
+            <summary>
+            Serializes an object to a string via XML serialization.
+            </summary>
+            <param name="obj">The object to serialize.</param>
+            <returns>A string representation of the object.</returns>
+        </member>
+        <member name="T:SearchTest.SearchLogic">
+            <summary>
+            Provides the search business logic for the search test application.
+            </summary>
+        </member>
+        <member name="F:SearchTest.SearchLogic.querySvc">
+            <summary>
+            Query Service provider
+            </summary>
+        </member>
+        <member name="F:SearchTest.SearchLogic.queryText">
+            <summary>
+            The query string (no packet wrapper)
+            </summary>
+        </member>
+        <member name="F:SearchTest.SearchLogic.queryPacket">
+            <summary>
+            The query packet
+            </summary>
+        </member>
+        <member name="F:SearchTest.SearchLogic.registrationPacket">
+            <summary>
+            The registration packet
+            </summary>
+        </member>
+        <member name="M:SearchTest.SearchLogic.#ctor">
+            <summary>
+            Creates a default SearchLogic object.
+            </summary>
+        </member>
+        <member name="M:SearchTest.SearchLogic.Registration">
+            <summary>
+            Registers the query service with the search provider.
+            </summary>
+            <returns>The results of registration.</returns>
+        </member>
+        <member name="M:SearchTest.SearchLogic.SetQuery(System.String,SearchTest.SearchLogic.QueryType,System.UInt32,System.UInt32,System.Byte)">
+            <summary>
+            Sets the search query and builds the query packet.
+            </summary>
+            <param name="query">The text to query for.</param>
+            <param name="queryType">The type of query to execute.</param>
+            <param name="startAt">The first record in the set to return.</param>
+            <param name="count">The total number of records to return.</param>
+            <param name="contentTypes">The content types that should be returned; a combination of <see cref="T:SearchTest.SearchLogic.ContentType"/> flags</param>
+        </member>
+        <member name="M:SearchTest.SearchLogic.ResetQuery">
+            <summary>
+            Clears the current query and query packet.
+            </summary>
+        </member>
+        <member name="M:SearchTest.SearchLogic.ExecuteQuery">
+            <summary>
+            Executes the currently set query.
+            </summary>
+            <returns>A string containing the XML query results.</returns>
+        </member>
+        <member name="P:SearchTest.SearchLogic.QueryService">
+            <summary>
+            Gets the current query service object.
+            </summary>
+        </member>
+        <member name="P:SearchTest.SearchLogic.QueryText">
+            <summary>
+            Gets the current query text (no packet wrapper).
+            </summary>
+        </member>
+        <member name="P:SearchTest.SearchLogic.QueryPacket">
+            <summary>
+            Gets the current query packet (query text and wrapper).
+            </summary>
+        </member>
+        <member name="P:SearchTest.SearchLogic.RegistrationPacket">
+            <summary>
+            Gets the current registration packet.
+            </summary>
+        </member>
+        <member name="T:SearchTest.SearchLogic.QueryType">
+            <summary>
+            The types of queries that can be performed.
+            </summary>
+        </member>
+        <member name="F:SearchTest.SearchLogic.QueryType.Keyword">
+            <summary>
+            Keyword search - query should be a set of keywords
+            </summary>
+        </member>
+        <member name="F:SearchTest.SearchLogic.QueryType.SQLFulltext">
+            <summary>
+            SQL Fulltext search - query should be in SQL Fulltext query syntax
+            </summary>
+        </member>
+        <member name="T:SearchTest.SearchLogic.ContentType">
+            <summary>
+            The types of content that can be returned.
+            </summary>
+        </member>
+        <member name="F:SearchTest.SearchLogic.ContentType.Content">
+            <summary>
+            Content
+            </summary>
+        </member>
+        <member name="F:SearchTest.SearchLogic.ContentType.Document">
+            <summary>
+            Document
+            </summary>
+        </member>
+        <member name="F:SearchTest.SearchLogic.ContentType.Form">
+            <summary>
+            Form
+            </summary>
+        </member>
+        <member name="T:SearchTest.SPSQueryService.QueryService">
+            <remarks/>
+        </member>
+        <member name="M:SearchTest.SPSQueryService.QueryService.#ctor">
+            <remarks/>
+        </member>
+        <member name="M:SearchTest.SPSQueryService.QueryService.Query(System.String)">
+            <remarks/>
+        </member>
+        <member name="M:SearchTest.SPSQueryService.QueryService.BeginQuery(System.String,System.AsyncCallback,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:SearchTest.SPSQueryService.QueryService.EndQuery(System.IAsyncResult)">
+            <remarks/>
+        </member>
+        <member name="M:SearchTest.SPSQueryService.QueryService.Registration(System.String)">
+            <remarks/>
+        </member>
+        <member name="M:SearchTest.SPSQueryService.QueryService.BeginRegistration(System.String,System.AsyncCallback,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:SearchTest.SPSQueryService.QueryService.EndRegistration(System.IAsyncResult)">
+            <remarks/>
+        </member>
+        <member name="M:SearchTest.SPSQueryService.QueryService.Status">
+            <remarks/>
+        </member>
+        <member name="M:SearchTest.SPSQueryService.QueryService.BeginStatus(System.AsyncCallback,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:SearchTest.SPSQueryService.QueryService.EndStatus(System.IAsyncResult)">
+            <remarks/>
+        </member>
+        <member name="M:SearchTest.SPSQueryService.QueryService.GetPortalSearchInfo">
+            <remarks/>
+        </member>
+        <member name="M:SearchTest.SPSQueryService.QueryService.BeginGetPortalSearchInfo(System.AsyncCallback,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:SearchTest.SPSQueryService.QueryService.EndGetPortalSearchInfo(System.IAsyncResult)">
+            <remarks/>
+        </member>
+        <member name="M:SearchTest.SPSQueryService.QueryService.QueryEx(System.String)">
+            <remarks/>
+        </member>
+        <member name="M:SearchTest.SPSQueryService.QueryService.BeginQueryEx(System.String,System.AsyncCallback,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:SearchTest.SPSQueryService.QueryService.EndQueryEx(System.IAsyncResult)">
+            <remarks/>
+        </member>
+    </members>
+</doc>

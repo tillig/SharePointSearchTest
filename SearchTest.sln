@@ -1,0 +1,35 @@
+Microsoft Visual Studio Solution File, Format Version 8.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SearchTest", "SearchTest.csproj", "{971FA552-F992-4E2D-896A-A3B51FE70843}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SearchLogic", "SearchLogic\SearchLogic.csproj", "{5AB23341-162A-4D13-8E27-197193FF4D00}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "SearchTestSetup", "SearchTestSetup\SearchTestSetup.vdproj", "{242BD52B-7AAE-4A18-8EE0-C9A60AA312BA}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfiguration) = preSolution
+		Debug = Debug
+		Release = Release
+	EndGlobalSection
+	GlobalSection(ProjectConfiguration) = postSolution
+		{971FA552-F992-4E2D-896A-A3B51FE70843}.Debug.ActiveCfg = Debug|.NET
+		{971FA552-F992-4E2D-896A-A3B51FE70843}.Debug.Build.0 = Debug|.NET
+		{971FA552-F992-4E2D-896A-A3B51FE70843}.Release.ActiveCfg = Release|.NET
+		{971FA552-F992-4E2D-896A-A3B51FE70843}.Release.Build.0 = Release|.NET
+		{5AB23341-162A-4D13-8E27-197193FF4D00}.Debug.ActiveCfg = Debug|.NET
+		{5AB23341-162A-4D13-8E27-197193FF4D00}.Debug.Build.0 = Debug|.NET
+		{5AB23341-162A-4D13-8E27-197193FF4D00}.Release.ActiveCfg = Release|.NET
+		{5AB23341-162A-4D13-8E27-197193FF4D00}.Release.Build.0 = Release|.NET
+		{242BD52B-7AAE-4A18-8EE0-C9A60AA312BA}.Debug.ActiveCfg = Debug
+		{242BD52B-7AAE-4A18-8EE0-C9A60AA312BA}.Release.ActiveCfg = Release
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal
